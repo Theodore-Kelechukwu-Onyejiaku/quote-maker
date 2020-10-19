@@ -35,7 +35,7 @@
         margin:2%;
     }
 
-    .main-container div{
+    .main-container > div{
         border-radius: 25px;
         background-color:rgb(219, 219, 219);
         height: 100vh;
