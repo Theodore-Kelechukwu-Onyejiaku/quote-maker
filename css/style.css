@@ -10,7 +10,7 @@
     margin-top: 1%;
 }
 
-.main-container div{
+.main-container > div{
     width:46%;
     border-radius: 25px;
     background-color:rgb(219, 219, 219);
