@@ -11,7 +11,7 @@
 .main-container > div{
     padding:3%;
     border-radius: 25px;
-    height: 620px;    
+    height: 650px;    
     background-color:rgb(219, 219, 219);
 }
 
@@ -34,14 +34,15 @@
 }
 
 .left-tools-top button{
+    display:flex;
+    justify-content: space-around;
     border:none;
     width:100%;
     height: 100%;
-    padding:2%;
+    padding:10%;
     border-radius:25px;
     cursor:pointer;
     background:none;
-    ;
     outline:none;
     animation: moveRight 1s ease-in
 }
@@ -55,22 +56,18 @@
 .left-tools-top button .tool-text{
     font-size:9px;
     position: relative;
-    bottom:10px;
+    top:10px;
 }
 
 .left-tools-top button img{
     position: relative;
-    top:5px;
 }
-
 
 .editor{
     height:70%;
     background-color: white;
-    width:70%;
-    margin:auto;
-    margin-top:5%;
-    margin-bottom: 5%;
+    width:60%;
+    margin: 5% 25% 5% 20%;
     box-shadow: 6px 10px 25px -10px rgba(0,0,0,.46); ;
     animation: moveCenter 1s ease-in
 }
@@ -79,6 +76,7 @@
     background-color: #54a9ff;
     color:white;
     font-size:9px;
+    padding:2px;
 }
 
 .main-container  #bottom button:hover{
@@ -104,15 +102,19 @@
     } 
     .editor{
         width: 100%;
+        margin: 5% 0% 5% 0%;
     }
-    .left-tools-top button{
-        
+    .main-container  #bottom button{
+        background-color: #54a9ff;
+        color:white;
+        font-size:9px;
+        padding:0;
+        border-radius: 5px;
     }
-
     .left-tools-top button .tool-text{
         display:none;
     }
-
+    
 }
 
 
