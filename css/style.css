@@ -108,7 +108,7 @@
     }
 
     .left-tools-top button .tool-text{
-        
+        display:none;
     }
 
 }
