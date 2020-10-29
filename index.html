@@ -7,20 +7,29 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+    <!-- START OF TOPMOST HEADER -->
     <header>
         
     </header>
+    <!-- END OF TOPMOST HEADER -->
+
+    <!-- START OF CONTAINER HOLDING THE TWO BOXES -->
     <div class="main-container">
-        <div>
+        <div class="box1">
             <div class="left-tools-top">
                 <div><button><span><img src="./images/off.gif" alt=""></span><span class="tool-text">AUTOMATIC TEXT COLOR</span></button> </div>
                 <div><button><span><img src="./images/rotate.gif" alt=""></span> <span class="tool-text">ROTATE YOUR CANVAS</span></button> </div>
                 <div><button><span><img src="./images/fitCanvas.gif" alt=""></span> <span class="tool-text">FIT CANVAS TO IMAGE</span></button> </div>
                 <div><button><span><img src="./images/resize.gif" alt=""></span> <span class="tool-text">CHANGE CANVAS SIZE</span></button> </div>
             </div>
+
+            <!-- START OF CANVAS -->
             <canvas class="editor">
-                    hello            
+                               
             </canvas>
+            <!-- END OF CANVAS -->
+
             <div class="left-tools-top" id="bottom">
                 <div><button> <br> GENERATE FONTS</button> </div>
                 <div><button> <br> GENERATE BACKGROUND</button> </div>
@@ -28,9 +37,24 @@
                 <div><button id="last-btn"> <br> GENERATE WORDING</button> </div>
             </div>
         </div>
-        <div>Box 2</div>
+        <div class="box2">
+            <header class="header">
+                <h5 class="tabs-btn"><button>TAB VIEW</button></h5>
+                <h5> <button class="layers-btn">LAYERS VIEW</button></h5>
+            </header>
+            <div class="right-tools-top">
+            <button>Quick</button>
+             <button>Text1</button>
+            <button>Text2</button>
+            <button>BACKGROUND</button>
+            <button>ORNAMENTS</button>
+            <button>LAYOUT</button>
+            <button>BRANDING</button>
+            </div>
+        </div>
     </div>
-    
+    <!-- END OF CONTAINER HOLDING THE TWO BOXES -->
+
     <script src="./js/index.js"></script>
 </body>
 </html>
