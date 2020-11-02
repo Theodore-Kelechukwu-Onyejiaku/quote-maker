@@ -120,6 +120,7 @@ body{
     padding:3px;
 }
 
+
 .right-tools-top{
     display:flex;
     justify-content: space-around;
@@ -135,18 +136,75 @@ body{
     cursor:pointer;
 }
 
-.edit-box-container div{
+.right-tools-top button:hover{
+    background-color: #54a9ff;
+}
+
+.edit-box-container > div{
+    background-color: white;
+    margin: auto;
+    height: 510px;
+    padding:3%;
     display: none;
 }
 
 .edit-box-container div.edit-box1{
-    display:block;
-    padding:10px;
-    width:100%;
-    height: 500px;
-    margin:auto;
-    background-color:white;
+    display: block;
 }
+
+
+/* 
+***********************************************************************************
+***********************************************************************************
+***********************************************************************************
+***********************************************************************************
+***********************************************************************************
+***********************************************************************************
+*/
+
+/* 
+**   FOR ELEMENTS IN EDIT BOX 1
+ */
+
+ .wrap1{
+     width:80%;
+     margin:auto;
+ }
+.text-area1{
+    width:100%;
+    padding:2%;
+    text-align: center;
+    border:thin solid grey;
+    outline:none;
+    border-radius: 10px 10px 0 0;
+}
+
+.wrap1-container{
+    background-color: #e5f7e1;
+}
+
+.wrap1-container .wrap1-btn-container{
+    width: 80%;
+    margin:auto;
+    background-color: #e5f7e1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrap1-color-container {
+    display:flex;
+    justify-content:space-around;
+    padding:3%;
+}
+
+.wrap1-color-container input{
+    width: 80px;
+}
+
+.wrap1-color-container h6{
+    text-align: center;
+}
+
 
 
 

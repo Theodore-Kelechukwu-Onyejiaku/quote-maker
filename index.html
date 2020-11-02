@@ -43,29 +43,68 @@
                 <h5> <button class="layers-btn">LAYERS VIEW</button></h5>
             </header>
             <div class="right-tools-top">
-                <button>Quick</button>
-                <button>Text1</button>
-                <button>Text2</button>
-                <button>BACKGROUND</button>
-                <button>ORNAMENTS</button>
-                <button>LAYOUT</button>
-                <button>BRANDING</button>
+                <button class="quick">Quick</button>
+                <button class="text1">Text1</button>
+                <button class="text2">Text2</button>
+                <button class="back">BACKGROUND</button>
+                <button class="orn">ORNAMENTS</button>
+                <button class="lay">LAYOUT</button>
+                <button class="brand">BRANDING</button>
             </div>
             
             <!-- START OF EDITING BOXES -->
             <div class="edit-box-container">
-                <div class="edit-box1">div 1</div>
-                <div class="exit-box2">div 2</div>
-                <div class="exit-box3">div 3</div>
-                <div class="exit-box4">div 4</div>
-                <div class="exit-box5">div 5</div>
-                <div class="exit-box6">div 6</div>
-                <div class="exit-box7">div 7</div>
+                <!-- START EDIT BOX 1 -->
+                <div class="edit-box1">
+                    <h6>THE TEXTS</h6>
+                    <br>
+                    <hr>
+                    <br>
+                    <div class="wrap1">
+                        <textarea style="" name="" class="text-area1"  placeholder="">__Your Custom *Beautiful* Quotes Here__</textarea>
+                        <div class="wrap1-container">
+                            <div  class="wrap1-btn-container">
+                                <button id="alignLeft"><img src="./images/alignLeft.png" alt=""></button>
+                                <button id="alignRight"><img src="./images/alignRight.png" alt=""></button>
+                                <button id="alignCenter"><img src="./images/alignCenter.png" alt=""></button>
+                                <button id="alignJustify"><img src="./images/alignJustify.png" alt=""></button>
+                                <button id="italic"><img src="./images/italic.png" alt=""></button>
+                                <button id="highlight"><img src="./images/highlight.gif" alt=""></button>
+                                <button id="center"><img src="./images/center.gif" alt=""></button>
+                            </div>
+                            <br>
+                            <div class="wrap1-color-container">
+                                <div>
+                                    <h6>TEXT COLOR</h6>
+                                    <input type="color">
+                                </div>
+                                <div>
+                                    <h6>HIGLIGHT</h6>
+                                    <input type="color">
+                                </div>
+                            </div>
+                            
+                                    
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- END EDIT BOX 2 -->
+
+
+                <div class="edit-box2">div 2</div>
+                <div class="edit-box3">div 3</div>
+                <div class="edit-box4">div 4</div>
+                <div class="edit-box5">div 5</div>
+                <div class="edit-box6">div 6</div>
+                <div class="edit-box7">div 7</div>
             </div>
         </div>
     </div>
     <!-- END OF CONTAINER HOLDING THE TWO BOXES -->
 
+    <script src="./js/jquery.js"></script>
     <script src="./js/index.js"></script>
 </body>
 </html>
