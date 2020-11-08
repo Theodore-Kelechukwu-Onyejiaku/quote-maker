@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quote Maker</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -60,20 +63,51 @@
                     <br>
                     <hr>
                     <br>
+
+                    <!-- START OF WRAP 1 -->
                     <div class="wrap1">
-                        <textarea style="" name="" class="text-area1"  placeholder="">__Your Custom *Beautiful* Quotes Here__</textarea>
+                        <textarea  name="" class="text-area1"  placeholder="">__Your Custom *Beautiful* Quotes Here__</textarea>
                         <div class="wrap1-container">
                             <div  class="wrap1-btn-container">
-                                <button id="alignLeft"><img src="./images/alignLeft.png" alt=""></button>
-                                <button id="alignRight"><img src="./images/alignRight.png" alt=""></button>
-                                <button id="alignCenter"><img src="./images/alignCenter.png" alt=""></button>
-                                <button id="alignJustify"><img src="./images/alignJustify.png" alt=""></button>
-                                <button id="italic"><img src="./images/italic.png" alt=""></button>
-                                <button id="highlight"><img src="./images/highlight.gif" alt=""></button>
-                                <button id="center"><img src="./images/center.gif" alt=""></button>
+                                <button ><img src="./images/alignLeft.png" alt=""></button>
+                                <button ><img src="./images/alignRight.png" alt=""></button>
+                                <button ><img src="./images/alignCenter.png" alt=""></button>
+                                <button ><img src="./images/alignJustify.png" alt=""></button>
+                                <button ><img src="./images/italic.png" alt=""></button>
+                                <button ><img src="./images/highlight.gif" alt=""></button>
+                                <button ><img src="./images/center.gif" alt=""></button>
                             </div>
                             <br>
                             <div class="wrap1-color-container">
+                                <div>
+                                    <h6>TEXT COLOR</h6>
+                                    <input type="color">
+                        
+                                </div>
+                                <div>
+                                    <h6>HIGLIGHT</h6>
+                                    <input type="color">
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                    <!-- END OF WRAP 1 -->
+                    <br>
+                    <!-- START OF WRAP 2 -->
+                    <div class="wrap2">
+                        <textarea  name="" class="text-area2"  placeholder="">Your Name</textarea>
+                        <div class="wrap2-container">
+                            <div  class="wrap2-btn-container">
+                                <button ><img src="./images/alignLeft.png" alt=""></button>
+                                <button ><img src="./images/alignRight.png" alt=""></button>
+                                <button ><img src="./images/alignCenter.png" alt=""></button>
+                                <button ><img src="./images/alignJustify.png" alt=""></button>
+                                <button ><img src="./images/italic.png" alt=""></button>
+                                <button ><img src="./images/highlight.gif" alt=""></button>
+                                <button ><img src="./images/center.gif" alt=""></button>
+                            </div>
+                            <br>
+                            <div class="wrap2-color-container">
                                 <div>
                                     <h6>TEXT COLOR</h6>
                                     <input type="color">
@@ -82,18 +116,50 @@
                                     <h6>HIGLIGHT</h6>
                                     <input type="color">
                                 </div>
-                            </div>
-                            
-                                    
+                            </div> 
                             
                         </div>
                     </div>
+                    <!-- END OF WRAP 2 -->
                     
+                    <!-- START OF BACKGROUND WRAP -->
+                    <div class="backgroun-wrap">
+                        <h6>BACKGROUND PHOTO</h6>
+                        <hr>
+                        
+                            <select>
+                              <option>- Background Category -</option>
+                              <option  style="font-size: 11px;"> BY COLOR</option>
+                              <option value="red">red</option>
+                              <option value="pink">pink</option>
+                              <option value="purple">purple</option>
+                              <option value="blue">blue</option>
+                              <option value="green">green</option>
+                              <option value="yellow">yellow</option>
+                              <option value="orange">orange</option>
+                              <option value="brown">brown</option>
+                              <option value="black">black</option>
+                              <option value="grey">grey</option>
+                              <option value="white">white</option>
+
+                            </select>
+                    </div>
+                    <!-- END OF BACKGROUND WRAP -->
+
+                </div>
+                <!-- END EDIT BOX 1 -->
+
+                <!-- START EDIT BOX 2 -->
+                <div class="edit-box2">
+                    <textarea  name="" class="text-area2"  placeholder="">__Your Custom *Beautiful* Quotes Here__</textarea>
+                    <br>
+                    <hr>
+                    <br>
+
+                
                 </div>
                 <!-- END EDIT BOX 2 -->
 
-
-                <div class="edit-box2">div 2</div>
                 <div class="edit-box3">div 3</div>
                 <div class="edit-box4">div 4</div>
                 <div class="edit-box5">div 5</div>
@@ -104,7 +170,19 @@
     </div>
     <!-- END OF CONTAINER HOLDING THE TWO BOXES -->
 
+
     <script src="./js/jquery.js"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="./js/index.js"></script>
+
+    <!-- for materialize javascript -->
+    <script>
+        $(document).ready(function(){
+        $('select').formSelect();
+      });
+    </script>
+    
 </body>
 </html>

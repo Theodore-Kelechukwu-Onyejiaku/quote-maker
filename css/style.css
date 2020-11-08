@@ -7,6 +7,29 @@ body{
     background-color:#e6f2e7;
 }
 
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 2px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #e5f7e1; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+  }
+
 .main-container{
     display: flex;
     margin: 0 2%; 
@@ -15,7 +38,7 @@ body{
 .main-container > div{
     padding:3%;
     border-radius: 25px;
-    height: 650px;    
+    height: 800px;    
     background-color:rgba(219, 219, 219, 0.959);
 }
 
@@ -143,7 +166,7 @@ body{
 .edit-box-container > div{
     background-color: white;
     margin: auto;
-    height: 510px;
+    height: 600px;
     padding:3%;
     display: none;
 }
@@ -166,11 +189,11 @@ body{
 **   FOR ELEMENTS IN EDIT BOX 1
  */
 
- .wrap1{
+ .wrap1, .wrap2{
      width:80%;
      margin:auto;
  }
-.text-area1{
+.text-area1, .text-area2{
     width:100%;
     padding:2%;
     text-align: center;
@@ -179,11 +202,13 @@ body{
     border-radius: 10px 10px 0 0;
 }
 
-.wrap1-container{
+.wrap1-container, .wrap2-container{
     background-color: #e5f7e1;
+    
+    border-radius: 0px 0px 10px 10px;
 }
 
-.wrap1-container .wrap1-btn-container{
+.wrap1-container .wrap1-btn-container, .wrap2-container .wrap2-btn-container{
     width: 80%;
     margin:auto;
     background-color: #e5f7e1;
@@ -191,17 +216,18 @@ body{
     justify-content: space-between;
 }
 
-.wrap1-color-container {
+.wrap1-color-container, .wrap2-color-container {
     display:flex;
     justify-content:space-around;
     padding:3%;
+    
 }
 
-.wrap1-color-container input{
+.wrap1-color-container input , .wrap2-color-container input{
     width: 80px;
 }
 
-.wrap1-color-container h6{
+.wrap1-color-container h6, .wrap2-color-container h6{
     text-align: center;
 }
 
@@ -239,6 +265,28 @@ body{
     
 }
 
+@media screen and (max-width: 700px){
+    .editor{
+        width:320px;
+        height:320px;
+        margin: 7%;
+        margin-top:20%;
+    }
+    
+    .right-tools-top {
+        position: fixed;
+        box-sizing: border-box;
+        bottom:0px;
+        width: 100%;
+        overflow-x: scroll;
+    }
+    .right-tools-top button{
+        font-size: unset;
+    }
+
+    .box2{}
+
+}
 
 
 @keyframes moveRight{
