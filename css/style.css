@@ -265,6 +265,7 @@ body{
     
 }
 
+
 @media screen and (max-width: 700px){
     .editor{
         height:320px;
@@ -282,7 +283,18 @@ body{
         font-size: unset;
     }
 
-    .box2{}
+    .box2 header{
+        display:none;
+    }
+
+    .box2 .edit-box-container{
+        display:none;
+    }
+    
+    .main-container .box2{
+        height:0px
+    }
+    
 
 }
 
