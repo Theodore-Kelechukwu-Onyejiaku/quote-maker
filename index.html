@@ -19,6 +19,7 @@
 
     <!-- START OF CONTAINER HOLDING THE TWO BOXES -->
     <div class="main-container">
+        <!-- START OF BOX 1 with canvas -->
         <div class="box1">
             <div class="left-tools-top">
                 <div><button><span><img src="./images/off.gif" alt=""></span><span class="tool-text">AUTOMATIC TEXT COLOR</span></button> </div>
@@ -40,10 +41,16 @@
                 <div><button id="last-btn"> <br> GENERATE WORDING</button> </div>
             </div>
         </div>
-        <div class="box2">
+        <!-- END OF BOX ONE that is with canvas -->
+
+        <!-- START OF BOX two that doesn't contain canvas -->
+        <div class="box2" id="box2">
             <header class="header">
                 <h5><button class="tabs-btn">TAB VIEW</button></h5>
                 <h5> <button class="layers-btn">LAYERS VIEW</button></h5>
+            </header>
+            <header class="header2">
+                <h1 style="text-align: right;" id="close-btn"><button>CLOSE</button></h1>
             </header>
             <div id="right-tools-top" class="right-tools-top">
                 <button class="quick">Quick</button>
@@ -58,7 +65,7 @@
             <!-- START OF EDITING BOXES -->
             <div class="edit-box-container">
                 <!-- START EDIT BOX 1 -->
-                <div class="edit-box1">
+                <div class="edit-box1 quick">
                     <h6>THE TEXTS</h6>
                     <br>
                     <hr>
@@ -168,9 +175,18 @@
             </div>
             <!-- END OF EDITING BOXES -->
         </div>
+        <!-- END OF BOX 2 that doesn't hold the canvas -->
+        
     </div>
     <!-- END OF CONTAINER HOLDING THE TWO BOXES -->
-
+    <div class="mobile-view-buttons">
+            <button id="mv-branding" >BRANDING</button>
+            <button id="mv-layout">Layout</button>
+            <button id="mv-text1">TEXT 1</button>
+            <button id="mv-text2">TEXT 2</button>
+            <button id="mv-background">BACKGROUND</button>
+            <button id="mv-ornaments">ORNAMENTS</button>
+    </div>
 
     <script src="./js/jquery.js"></script>
 
@@ -184,6 +200,9 @@
         $('select').formSelect();
       });
     </script>
+    <!-- End of for materialize javascript -->
+
+    
     
 </body>
 </html>

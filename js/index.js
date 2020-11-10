@@ -65,4 +65,40 @@ $("document").ready( function() {
         changeBackground(brandBtn, editBtnArr)
     })
 
+
+    // FOR MOBILE VIEW BUTTONS
+    var brandingBtn = $("#mv-branding");var layoutBtn = $("#mv-layout"); var mvText1Btn = $("#mv-text1"); var mvText2Btn = $("#mv-text2"); var backgroundBtn = $("#mv-background"); var ornamentsBtn = $("#mv-ornaments");
+    var box2 = $(".box2");
+    var rightToolsTop = $(".right-tools-top");
+    var mvBtns = [brandingBtn, layoutBtn, mvText1Btn, mvText2Btn, backgroundBtn, ornamentsBtn];
+    var closeBtn = $("#close-btn");
+
+    closeBtn.click(()=>{
+        box2.hide()
+    })
+    mvBtns.forEach(each_btn =>{
+        each_btn.click(()=>{
+          box2.fadeIn();
+          rightToolsTop.fadeOut();
+          window.location = ("/#close-btn")
+        })
+    })
+    brandingBtn.click(()=>{
+        hideEditBoxes(editBox7, editBoxArr)
+    })
+    layoutBtn.click(()=>{
+        hideEditBoxes(editBox6, editBoxArr)
+    })
+    mvText1Btn.click(()=>{
+        hideEditBoxes(editBox2, editBoxArr)
+    })
+    mvText2Btn.click(()=>{
+        hideEditBoxes(editBox3, editBoxArr)
+    })
+    backgroundBtn.click(()=>{
+        hideEditBoxes(editBox4, editBoxArr)
+    })
+    ornamentsBtn.click(()=>{
+        hideEditBoxes(editBox5, editBoxArr)
+    })
 })

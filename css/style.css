@@ -9,7 +9,7 @@ body{
 
 /* width */
 ::-webkit-scrollbar {
-    width: 5px;
+    width: 15px;
     height: 2px;
   }
   
@@ -21,13 +21,13 @@ body{
    
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #e5f7e1; 
+    background: pink; 
     border-radius: 10px;
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #b30000; 
+    background: pink; 
   }
 
 .main-container{
@@ -116,6 +116,7 @@ body{
 }
 
 
+
 /* 
 *********************************************************************************************************************************************
 *********************************************************************************************************************************************
@@ -143,6 +144,9 @@ body{
     padding:3px;
 }
 
+.header2{
+    display: none;
+}
 
 .right-tools-top{
     display:flex;
@@ -231,8 +235,16 @@ body{
     text-align: center;
 }
 
-
-
+/* *
+*******************************************************************************************************
+*******************************************************************************************************
+*******************************************************************************************************
+*******************************************************************************************************
+*/
+/* FOR MOBILE VIEW BUTTONS */
+.mobile-view-buttons{
+    display: none;
+}
 
 
 
@@ -266,13 +278,51 @@ body{
 }
 
 
-@media screen and (max-width: 700px){
+/* mobile view */
+@media screen and (max-width: 450px){
+    .main-container > div{
+        height:90vh;
+    }
+
     .editor{
         height:320px;
         margin-top:20%;
     }
+
+    .box2{
+        display:none;
+    }
     
-    .right-tools-top {
+    .mobile-view-buttons {
+        width:100%;
+       display: flex;
+       justify-content: center;
+       overflow-x: scroll;
+       height:10vh;
+       position: fixed;
+       bottom:0px;
+    }
+    .mobile-view-buttons button{
+        font-size: 12px;
+        background-color:#54a9ff;
+        color:white;
+    }
+
+    .header{
+        display: none;;
+    }
+
+    .header2{
+        display: block;
+    }
+
+    .header2 button{
+        font-size:30px;
+        background-color: #54a9ff;
+    }
+    
+
+    /* .right-tools-top {
         position: fixed;
         box-sizing: border-box;
         bottom:0px;
@@ -293,7 +343,7 @@ body{
     
     .main-container .box2{
         height:0px
-    }
+    } */
     
 
 }
