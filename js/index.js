@@ -80,7 +80,7 @@ $("document").ready( function() {
         each_btn.click(()=>{
           box2.fadeIn();
           rightToolsTop.fadeOut();
-          window.location = ("/#close-btn")
+          window.location = ("#close-btn")
         })
     })
     brandingBtn.click(()=>{
